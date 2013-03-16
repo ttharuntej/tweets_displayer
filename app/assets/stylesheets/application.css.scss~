@@ -179,6 +179,25 @@ h5{
   @include auth-button-style();
 }
 
+.signin_google {
+  @include auth-button-style();
+}
+
+.signin_github {
+  @include auth-button-style();
+}
+
+.signin_foursquare {
+  @include auth-button-style();
+}
+
+.signin_tumblr {
+  @include auth-button-style();
+}
+
+.signin_linkedin {
+  @include auth-button-style();
+}
 
 .signin_identity {
 }
