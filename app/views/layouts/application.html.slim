@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta http-equiv='Content-Type' content='text/html; charset=UTF-8'
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+  .body
+    .header
+      h3 Tweets Displayer
+    .container
+      .form_header
+        - if current_user
+          .index
+			h5
+			  ' Welcome
+			  = current_user.name
+			  |  ( 
+			  a href="/signout"
+			    | Sign Out
+			  |  )
+      = yield

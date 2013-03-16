@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Tweets Displayer
+
+  body
+    - flash.each do |key, message|
+      .key
+        = message
+    - if current_user
+      - tweets.each do |tweet|
+        br
+        = tweet.text
+	- else
+	  .welcome_text
+	    h3 Welcome to Tweets Displayer
+	    br
+	      h4 Sign in using
+	    .signin_external
+	      .signin_twitter
+		    a href="/auth/twitter"
+		      img.twitter src="/assets/twitter_64.png"
+		    .twitter_label
+		      | Twitter
+		  

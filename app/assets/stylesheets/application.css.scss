@@ -1,0 +1,203 @@
+//= require jquery.ui.dialog
+//= require_self
+//= require_tree
+// Import twitter bootstrap scss stylesheets from bootstrap-sass
+@import 'bootstrap';
+@import 'bootstrap/variables';
+
+@mixin auth-button-style() {
+  float: left;
+  margin-left: 20px;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+a {
+  &:hover {
+    color: #549ce4;
+  }
+}
+
+.header {
+  text-align: center;
+}
+
+.container {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.post {
+  padding: 5px;
+}
+
+.delete_post {
+  width: 30px;
+  margin-left: 850px;
+  margin-top: -30px;
+}
+
+.title {
+  padding: 5px;
+  background-color: #ffd55b;
+  width: 760px;
+  margin-left: 62px;
+  margin-top: -28px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.title_without_edit {
+  padding: 5px;
+  background-color: #ffd55b;
+  width: 760px;
+  margin-left: 62px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+.message {
+  padding: 5px;
+  background-color: #f2f2f2;
+  width: 760px;
+  margin-left: -5px;
+  text-align: justify;
+  float:left;
+  display: none;
+}
+
+.input .input_message {
+  width: 925px;
+  height: 85px;
+}
+
+.actions {
+  float: right;
+  margin-right: 10px;
+}
+
+.title_error {
+  color: red;
+  margin-top: -10px;
+  display: none;
+}
+
+.message_error {
+  color: red;
+  margin-top: -22px;
+  display: none;
+}
+
+.show_title {
+  padding: 8px;
+  background-color: #ffd55b;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.show_message {
+  padding: 10px;
+  background-color: #f2f2f2;
+  text-align: justify;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.show_edit {
+  float: right;
+  margin-right: 20px;
+  margin-top: 8px;
+}
+
+.form_delete {
+  float: right;
+  margin-top: -47px;
+  margin-right: 105px;
+}
+
+input#post_title {
+  width: 925px;
+}
+
+.form_header {
+  padding: 5px;
+  background-color: #3d4044;
+  border-radius: 20px;
+  height: 40px;
+}
+
+div.index {
+  margin-right: 30px;
+  float: right;
+}
+
+h5{
+  color: white;
+}
+
+.welcome_text {
+  font-weight: bold;
+  text-align: center;
+}
+
+.home_button{
+  float: left;
+  margin: 5px;
+}
+
+.post_button{
+  float: left;
+  margin-left: 3px;
+  margin-top: 6px;
+}
+
+.form_message {
+  width: 925px;
+}
+
+.signin_external {
+  margin: 9px;
+}
+
+.signin_facebook {
+  float: left;
+  margin-left: 170px;
+}
+
+.signin_twitter {
+  @include auth-button-style();
+}
+
+.signin_google {
+  @include auth-button-style();
+}
+
+.signin_github {
+  @include auth-button-style();
+}
+
+.signin_foursquare {
+  @include auth-button-style();
+}
+
+.signin_tumblr {
+  @include auth-button-style();
+}
+
+.signin_linkedin {
+  @include auth-button-style();
+}
+
+.signin_identity {
+}
